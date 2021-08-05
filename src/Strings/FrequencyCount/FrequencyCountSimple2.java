@@ -21,7 +21,8 @@ public class FrequencyCountSimple2 {
 //            System.out.println(i+" "+frequency[i - 'a']);
             if (hashMap.containsKey(i)){
                 hashMap.replace(i,frequency[i-'a']);
-            }else {
+            }
+            else {
                 hashMap.putIfAbsent(i,frequency[i - 'a']);
             }
         }
